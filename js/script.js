@@ -39,6 +39,9 @@ let minorsPrice = totalPrice - ((20/100) * totalPrice);
 
 let eldersPrice = totalPrice - ((40/100) * totalPrice);
 
+// calcolo finale
+
+
 
 // test
 
@@ -46,7 +49,7 @@ let eldersPrice = totalPrice - ((40/100) * totalPrice);
 
 // console.log("il tuo biglietto costa: " + totalPrice + "€");
 
-// return ((percent/ 100) * total).toFixed(2)
+// ((percent/ 100) * total).toFixed(2)
 
 // console.log("il prezzo per i minorenni è: " + minorsPrice.toFixed(2) + "€");
 

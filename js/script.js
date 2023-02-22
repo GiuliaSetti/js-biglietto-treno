@@ -29,7 +29,7 @@ let userAge = parseInt(prompt("Quanti anni hai?"));
 
 let totalKm = parseInt(prompt("Quanti km vuoi percorrere?"));
 
-// calcolo km * prezzototale
+// calcolo km * prezzo totale
 
 let totalPrice = totalKm * 0.21; 
 
@@ -41,19 +41,21 @@ let eldersPrice = totalPrice - ((40/100) * totalPrice);
 
 // calcolo finale
 
+if(userAge < 18){
+
+    document.writeln("Il costo del tuo biglietto è di " + minorsPrice.toFixed(2) + " €");
+
+} else if(userAge >= 65){
+
+    document.writeln("Il costo del tuo biglietto è di " + eldersPrice.toFixed(2) + " €");
+
+} else {
+
+    document.writeln("Il costo del tuo biglietto è di " + totalPrice.toFixed(2) + " €");
+
+}
 
 
-// test
-
-// console.log("hai " + userAge + " e vuoi percorrere " + totalKm + "km");
-
-// console.log("il tuo biglietto costa: " + totalPrice + "€");
-
-// ((percent/ 100) * total).toFixed(2)
-
-// console.log("il prezzo per i minorenni è: " + minorsPrice.toFixed(2) + "€");
-
-// console.log("il prezzo per gli over 65 è: " + eldersPrice.toFixed(2) + "€");
 
 
 

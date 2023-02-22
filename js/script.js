@@ -11,12 +11,12 @@
     - chiedere all'utente i km che vuole percorrere
 
     - calcolare il totale del biglietto x km
-    - calcolare il totale del biglietto x km - 20%
-    - calcolare il totale del biglietto xkm - 40%
 
     ? SE utente minore di 18 anni 
+        ° si applica lo sconto del 20%
         ° il tuo biglietto costa € tot
     : ALTRIMENTI SE utente maggiore di 65 anni
+        ° si applica lo sconto del 40%
         ° il tuo biglietto costa € tot
     : ALTRIMENTI 
         ° il tuo biglietto costa tot.
@@ -33,21 +33,19 @@ let totalKm = parseInt(prompt("Quanti km vuoi percorrere?"));
 
 let totalPrice = totalKm * 0.21; 
 
-// calcolo sconti
-
-let minorsPrice = totalPrice - ((20/100) * totalPrice);
-
-let eldersPrice = totalPrice - ((40/100) * totalPrice);
-
 // calcolo finale
 
 if(userAge < 18){
 
-    document.writeln("Il costo del tuo biglietto è di " + minorsPrice.toFixed(2) + " €");
+    let discount20 = (totalPrice/100) * 20;
+
+    document.writeln("Il costo del tuo biglietto è di " + (totalPrice - discount20).toFixed(2) + " €");
 
 } else if(userAge >= 65){
 
-    document.writeln("Il costo del tuo biglietto è di " + eldersPrice.toFixed(2) + " €");
+    let discount40 = (totalPrice/100) * 40;
+
+    document.writeln("Il costo del tuo biglietto è di " + (totalPrice - discount40).toFixed(2) + " €");
 
 } else {
 

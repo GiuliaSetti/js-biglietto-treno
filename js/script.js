@@ -23,4 +23,15 @@
 
 */
 
+let userAge = parseInt(prompt("Quanti anni hai?"));
+
+let totalKm = parseInt(prompt("Quanti km vuoi percorrere?"));
+
+// test
+
+// console.log("hai " + userAge + " e vuoi percorrere " + totalKm + "km");
+
+
+
+
 

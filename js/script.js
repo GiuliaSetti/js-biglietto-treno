@@ -27,9 +27,17 @@ let userAge = parseInt(prompt("Quanti anni hai?"));
 
 let totalKm = parseInt(prompt("Quanti km vuoi percorrere?"));
 
+let totalPrice = totalKm * 0.21; 
+
 // test
 
 // console.log("hai " + userAge + " e vuoi percorrere " + totalKm + "km");
+
+// console.log("il tuo biglietto costa: " + totalPrice + "€");
+
+
+
+
 
 
 
